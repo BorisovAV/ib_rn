@@ -7,21 +7,11 @@ export default class App extends React.Component {
    }
   render() {
     return (
-      <View
-        style={{
-          flexDirection: 'row',
-          height: 100,
-          padding: 20,
-        }}>
-        <View style={{backgroundColor: 'gray', flex: 0.3}} />
-        <View style={{backgroundColor: 'red', flex: 0.5}} />
-        <View style={styles.container}></View>
+      <View style={styles.container}>
         <View style={styles.buttonContainer}>
-        <Text>Hello World!</Text>
-        <Button onPress={this._onPress} title="Hello" color="#000000" accessibilityLabel="Tap on Me!"/>
+          <Button onPress={this._onPress} title="Hello" color="#FFFFFF" accessibilityLabel="Tap on Me!"/>
+        </View>
       </View>
-      </View>
-      
     );
   }
 }
